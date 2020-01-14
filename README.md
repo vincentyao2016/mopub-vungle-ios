@@ -12,6 +12,8 @@ Go to the file Constant.m and input your placement ids:
 NSString* const adUnitId = @"";
 NSString* const interstitialPlacement = @"";
 NSString* const rewardPlacement = @"";
+NSString* const bannerPlacement = @"";
+NSString* const mrecPlacement = @"";
 ```
 Run the commmand below with your terminal
 ```
@@ -26,7 +28,7 @@ You should good to go now!
 ```
 # comment below lines
 # pod 'mopub-ios-sdk', '5.10.0'
-# pod 'MoPub-Vungle-Adapters', '6.4.6.1'
+# pod "VungleSDK-iOS", '6.5.0'
 ```
 3. Run pod install to remove the frameworks from the project
 4. Integrate frameworks manually
@@ -36,7 +38,5 @@ https://developers.mopub.com/publishers/ios/integrate/
 
 ## Tested Version
 Mopub + Vungle + Adapter:
-5.10.0 + 6.4.6 + 6.4.6.1
+5.10.0 + 6.5.0 + 6.5.0.0
 
-## Note
-This version is not support banner yet.

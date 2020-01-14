@@ -13,6 +13,7 @@
 #import "MPMoPubConfiguration.h"
 #import "MPRewardedVideo.h"
 
+#import "BannerVC.h"
 #import "Constant.h"
 
 @interface ViewController ()<MPInterstitialAdControllerDelegate, MPRewardedVideoDelegate>
@@ -64,11 +65,17 @@
     [playRewardBtn setTitle:@"Play Reward" forState:UIControlStateNormal];
     [playRewardBtn addTarget:self action:@selector(playReward) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton *goBannerBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    goBannerBtn.frame = CGRectMake(x, y + 250, btnWidth, btnHeight);
+    [goBannerBtn setTitle:@"Go Banner" forState:UIControlStateNormal];
+    [goBannerBtn addTarget:self action:@selector(goBanner) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:initBtn];
     [self.view addSubview:loadInterstitialBtn];
     [self.view addSubview:playIntersititalBtn];
     [self.view addSubview:loadRewardBtn];
     [self.view addSubview:playRewardBtn];
+    [self.view addSubview:goBannerBtn];
 }
 
 # pragma mark - mopub init, load & play
@@ -99,6 +106,11 @@
 
 - (void)playReward {
     [MPRewardedVideo presentRewardedVideoAdForAdUnitID:rewardPlacement fromViewController:self withReward:0];
+}
+
+- (void)goBanner {
+    BannerVC *bannerVC = [[BannerVC alloc] init];
+    [self presentViewController:bannerVC animated:YES completion:nil];
 }
 
 #pragma mark - Interstitial Delegate
