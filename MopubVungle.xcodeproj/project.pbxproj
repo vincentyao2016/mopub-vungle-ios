@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AEE02DB5CD2766E4E152076 /* libPods-MopubVungleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D6C983CB94F8F20DDE1CE0 /* libPods-MopubVungleTests.a */; };
+		BF8E266623CD8430005FF531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E266523CD8430005FF531 /* AppDelegate.m */; };
+		BF8E266923CD8430005FF531 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E266823CD8430005FF531 /* SceneDelegate.m */; };
+		BF8E266C23CD8430005FF531 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E266B23CD8430005FF531 /* ViewController.m */; };
+		BF8E266F23CD8430005FF531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8E266D23CD8430005FF531 /* Main.storyboard */; };
+		BF8E267123CD8432005FF531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8E267023CD8432005FF531 /* Assets.xcassets */; };
+		BF8E267423CD8432005FF531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8E267223CD8432005FF531 /* LaunchScreen.storyboard */; };
+		BF8E267723CD8432005FF531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E267623CD8432005FF531 /* main.m */; };
+		BF8E268123CD8432005FF531 /* MopubVungleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E268023CD8432005FF531 /* MopubVungleTests.m */; };
+		BF8E268C23CD8432005FF531 /* MopubVungleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E268B23CD8432005FF531 /* MopubVungleUITests.m */; };
+		BF8E26A123CD869E005FF531 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E269D23CD869E005FF531 /* Constant.m */; };
+		C38EFD2C22677811608A462D /* libPods-MopubVungle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E56B79FFC8A683309A9F2D9 /* libPods-MopubVungle.a */; };
+		CD883FABD10ECBE34965547B /* libPods-MopubVungleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4705105FD8E447D48A07DDC5 /* libPods-MopubVungleUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8E267D23CD8432005FF531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8E265923CD8430005FF531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8E266023CD8430005FF531;
+			remoteInfo = MopubVungle;
+		};
+		BF8E268823CD8432005FF531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8E265923CD8430005FF531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8E266023CD8430005FF531;
+			remoteInfo = MopubVungle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016E657BA84C53115B000C44 /* Pods-MopubVungleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleTests/Pods-MopubVungleTests.release.xcconfig"; sourceTree = "<group>"; };
+		12D6C983CB94F8F20DDE1CE0 /* libPods-MopubVungleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MopubVungleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E06075AC8659E92D845C0BB /* Pods-MopubVungle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungle.release.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungle/Pods-MopubVungle.release.xcconfig"; sourceTree = "<group>"; };
+		3E56B79FFC8A683309A9F2D9 /* libPods-MopubVungle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MopubVungle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4705105FD8E447D48A07DDC5 /* libPods-MopubVungleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MopubVungleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805B35370C1C451EF753A74C /* Pods-MopubVungleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleTests/Pods-MopubVungleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0AAB9DFC0CA9BEB1509856A /* Pods-MopubVungleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleUITests/Pods-MopubVungleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8E266123CD8430005FF531 /* MopubVungle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MopubVungle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8E266423CD8430005FF531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF8E266523CD8430005FF531 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF8E266723CD8430005FF531 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BF8E266823CD8430005FF531 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BF8E266A23CD8430005FF531 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF8E266B23CD8430005FF531 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF8E266E23CD8430005FF531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8E267023CD8432005FF531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8E267323CD8432005FF531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF8E267523CD8432005FF531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8E267623CD8432005FF531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF8E267C23CD8432005FF531 /* MopubVungleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MopubVungleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8E268023CD8432005FF531 /* MopubVungleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MopubVungleTests.m; sourceTree = "<group>"; };
+		BF8E268223CD8432005FF531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8E268723CD8432005FF531 /* MopubVungleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MopubVungleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8E268B23CD8432005FF531 /* MopubVungleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MopubVungleUITests.m; sourceTree = "<group>"; };
+		BF8E268D23CD8432005FF531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8E269B23CD869D005FF531 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		BF8E269D23CD869E005FF531 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		CFFF16896D49F601ECC5FDCA /* Pods-MopubVungle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungle/Pods-MopubVungle.debug.xcconfig"; sourceTree = "<group>"; };
+		E2F95A39342976B06B966797 /* Pods-MopubVungleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleUITests/Pods-MopubVungleUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8E265E23CD8430005FF531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38EFD2C22677811608A462D /* libPods-MopubVungle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8E267923CD8432005FF531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEE02DB5CD2766E4E152076 /* libPods-MopubVungleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8E268423CD8432005FF531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD883FABD10ECBE34965547B /* libPods-MopubVungleUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EE97C1D7BA2A1E40D896B3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E56B79FFC8A683309A9F2D9 /* libPods-MopubVungle.a */,
+				12D6C983CB94F8F20DDE1CE0 /* libPods-MopubVungleTests.a */,
+				4705105FD8E447D48A07DDC5 /* libPods-MopubVungleUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3A715EC9A5D05106F1BBC18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF16896D49F601ECC5FDCA /* Pods-MopubVungle.debug.xcconfig */,
+				2E06075AC8659E92D845C0BB /* Pods-MopubVungle.release.xcconfig */,
+				805B35370C1C451EF753A74C /* Pods-MopubVungleTests.debug.xcconfig */,
+				016E657BA84C53115B000C44 /* Pods-MopubVungleTests.release.xcconfig */,
+				A0AAB9DFC0CA9BEB1509856A /* Pods-MopubVungleUITests.debug.xcconfig */,
+				E2F95A39342976B06B966797 /* Pods-MopubVungleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF8E265823CD8430005FF531 = {
+			isa = PBXGroup;
+			children = (
+				BF8E266323CD8430005FF531 /* MopubVungle */,
+				BF8E267F23CD8432005FF531 /* MopubVungleTests */,
+				BF8E268A23CD8432005FF531 /* MopubVungleUITests */,
+				BF8E266223CD8430005FF531 /* Products */,
+				B3A715EC9A5D05106F1BBC18 /* Pods */,
+				7EE97C1D7BA2A1E40D896B3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8E266223CD8430005FF531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E266123CD8430005FF531 /* MopubVungle.app */,
+				BF8E267C23CD8432005FF531 /* MopubVungleTests.xctest */,
+				BF8E268723CD8432005FF531 /* MopubVungleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8E266323CD8430005FF531 /* MopubVungle */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E269B23CD869D005FF531 /* Constant.h */,
+				BF8E269D23CD869E005FF531 /* Constant.m */,
+				BF8E266423CD8430005FF531 /* AppDelegate.h */,
+				BF8E266523CD8430005FF531 /* AppDelegate.m */,
+				BF8E266723CD8430005FF531 /* SceneDelegate.h */,
+				BF8E266823CD8430005FF531 /* SceneDelegate.m */,
+				BF8E266A23CD8430005FF531 /* ViewController.h */,
+				BF8E266B23CD8430005FF531 /* ViewController.m */,
+				BF8E266D23CD8430005FF531 /* Main.storyboard */,
+				BF8E267023CD8432005FF531 /* Assets.xcassets */,
+				BF8E267223CD8432005FF531 /* LaunchScreen.storyboard */,
+				BF8E267523CD8432005FF531 /* Info.plist */,
+				BF8E267623CD8432005FF531 /* main.m */,
+			);
+			path = MopubVungle;
+			sourceTree = "<group>";
+		};
+		BF8E267F23CD8432005FF531 /* MopubVungleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E268023CD8432005FF531 /* MopubVungleTests.m */,
+				BF8E268223CD8432005FF531 /* Info.plist */,
+			);
+			path = MopubVungleTests;
+			sourceTree = "<group>";
+		};
+		BF8E268A23CD8432005FF531 /* MopubVungleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E268B23CD8432005FF531 /* MopubVungleUITests.m */,
+				BF8E268D23CD8432005FF531 /* Info.plist */,
+			);
+			path = MopubVungleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8E266023CD8430005FF531 /* MopubVungle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8E269023CD8432005FF531 /* Build configuration list for PBXNativeTarget "MopubVungle" */;
+			buildPhases = (
+				395BBE6305348C3F76790918 /* [CP] Check Pods Manifest.lock */,
+				BF8E265D23CD8430005FF531 /* Sources */,
+				BF8E265E23CD8430005FF531 /* Frameworks */,
+				BF8E265F23CD8430005FF531 /* Resources */,
+				A21039816DA636C24367FFC7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MopubVungle;
+			productName = MopubVungle;
+			productReference = BF8E266123CD8430005FF531 /* MopubVungle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF8E267B23CD8432005FF531 /* MopubVungleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8E269323CD8432005FF531 /* Build configuration list for PBXNativeTarget "MopubVungleTests" */;
+			buildPhases = (
+				8629AF25B47AF2841B0BB6D4 /* [CP] Check Pods Manifest.lock */,
+				BF8E267823CD8432005FF531 /* Sources */,
+				BF8E267923CD8432005FF531 /* Frameworks */,
+				BF8E267A23CD8432005FF531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8E267E23CD8432005FF531 /* PBXTargetDependency */,
+			);
+			name = MopubVungleTests;
+			productName = MopubVungleTests;
+			productReference = BF8E267C23CD8432005FF531 /* MopubVungleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF8E268623CD8432005FF531 /* MopubVungleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8E269623CD8432005FF531 /* Build configuration list for PBXNativeTarget "MopubVungleUITests" */;
+			buildPhases = (
+				3968BCF5152D185F453FC738 /* [CP] Check Pods Manifest.lock */,
+				BF8E268323CD8432005FF531 /* Sources */,
+				BF8E268423CD8432005FF531 /* Frameworks */,
+				BF8E268523CD8432005FF531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8E268923CD8432005FF531 /* PBXTargetDependency */,
+			);
+			name = MopubVungleUITests;
+			productName = MopubVungleUITests;
+			productReference = BF8E268723CD8432005FF531 /* MopubVungleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8E265923CD8430005FF531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Vincent;
+				TargetAttributes = {
+					BF8E266023CD8430005FF531 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					BF8E267B23CD8432005FF531 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BF8E266023CD8430005FF531;
+					};
+					BF8E268623CD8432005FF531 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BF8E266023CD8430005FF531;
+					};
+				};
+			};
+			buildConfigurationList = BF8E265C23CD8430005FF531 /* Build configuration list for PBXProject "MopubVungle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF8E265823CD8430005FF531;
+			productRefGroup = BF8E266223CD8430005FF531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8E266023CD8430005FF531 /* MopubVungle */,
+				BF8E267B23CD8432005FF531 /* MopubVungleTests */,
+				BF8E268623CD8432005FF531 /* MopubVungleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF8E265F23CD8430005FF531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8E267423CD8432005FF531 /* LaunchScreen.storyboard in Resources */,
+				BF8E267123CD8432005FF531 /* Assets.xcassets in Resources */,
+				BF8E266F23CD8430005FF531 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8E267A23CD8432005FF531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8E268523CD8432005FF531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		395BBE6305348C3F76790918 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MopubVungle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3968BCF5152D185F453FC738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MopubVungleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8629AF25B47AF2841B0BB6D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MopubVungleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A21039816DA636C24367FFC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MopubVungle/Pods-MopubVungle-resources.sh",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPAdapters.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdapters.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MopubVungle/Pods-MopubVungle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8E265D23CD8430005FF531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8E266C23CD8430005FF531 /* ViewController.m in Sources */,
+				BF8E26A123CD869E005FF531 /* Constant.m in Sources */,
+				BF8E266623CD8430005FF531 /* AppDelegate.m in Sources */,
+				BF8E267723CD8432005FF531 /* main.m in Sources */,
+				BF8E266923CD8430005FF531 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8E267823CD8432005FF531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8E268123CD8432005FF531 /* MopubVungleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8E268323CD8432005FF531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8E268C23CD8432005FF531 /* MopubVungleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8E267E23CD8432005FF531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8E266023CD8430005FF531 /* MopubVungle */;
+			targetProxy = BF8E267D23CD8432005FF531 /* PBXContainerItemProxy */;
+		};
+		BF8E268923CD8432005FF531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8E266023CD8430005FF531 /* MopubVungle */;
+			targetProxy = BF8E268823CD8432005FF531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF8E266D23CD8430005FF531 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8E266E23CD8430005FF531 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8E267223CD8432005FF531 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8E267323CD8432005FF531 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8E268E23CD8432005FF531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF8E268F23CD8432005FF531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8E269123CD8432005FF531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFFF16896D49F601ECC5FDCA /* Pods-MopubVungle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MopubVungle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8E269223CD8432005FF531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E06075AC8659E92D845C0BB /* Pods-MopubVungle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MopubVungle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF8E269423CD8432005FF531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805B35370C1C451EF753A74C /* Pods-MopubVungleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MopubVungleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MopubVungle.app/MopubVungle";
+			};
+			name = Debug;
+		};
+		BF8E269523CD8432005FF531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016E657BA84C53115B000C44 /* Pods-MopubVungleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MopubVungleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MopubVungle.app/MopubVungle";
+			};
+			name = Release;
+		};
+		BF8E269723CD8432005FF531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AAB9DFC0CA9BEB1509856A /* Pods-MopubVungleUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MopubVungleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MopubVungle;
+			};
+			name = Debug;
+		};
+		BF8E269823CD8432005FF531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F95A39342976B06B966797 /* Pods-MopubVungleUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MopubVungleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MopubVungle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8E265C23CD8430005FF531 /* Build configuration list for PBXProject "MopubVungle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8E268E23CD8432005FF531 /* Debug */,
+				BF8E268F23CD8432005FF531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8E269023CD8432005FF531 /* Build configuration list for PBXNativeTarget "MopubVungle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8E269123CD8432005FF531 /* Debug */,
+				BF8E269223CD8432005FF531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8E269323CD8432005FF531 /* Build configuration list for PBXNativeTarget "MopubVungleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8E269423CD8432005FF531 /* Debug */,
+				BF8E269523CD8432005FF531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8E269623CD8432005FF531 /* Build configuration list for PBXNativeTarget "MopubVungleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8E269723CD8432005FF531 /* Debug */,
+				BF8E269823CD8432005FF531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF8E265923CD8430005FF531 /* Project object */;
+}

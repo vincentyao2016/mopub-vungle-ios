@@ -1,0 +1,188 @@
+//
+//  ViewController.m
+//  MopubVungle
+//
+//  Created by Vincent on 2020/1/14.
+//  Copyright © 2020 Vincent. All rights reserved.
+//
+
+#import "ViewController.h"
+#import <UIKit/NSText.h>
+
+#import "MoPub.h"
+#import "MPMoPubConfiguration.h"
+#import "MPRewardedVideo.h"
+
+#import "Constant.h"
+
+@interface ViewController ()<MPInterstitialAdControllerDelegate, MPRewardedVideoDelegate>
+@property (nonatomic, retain) MPInterstitialAdController *interstitial;
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self createView];
+}
+
+- (void)createView {
+    float screenWidth = self.view.bounds.size.width;
+    float x = screenWidth/2-100;
+    float y = 100;
+    float btnWidth = 200;
+    float btnHeight = 50;
+    
+    UILabel *title = [[UILabel alloc] init];
+    title.frame = CGRectMake(x, y - 50, btnWidth, btnHeight);
+    title.text = @"Mopub + Vungle";
+    title.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:title];
+    
+    UIButton *initBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    initBtn.frame = CGRectMake(x, y, btnWidth, btnHeight);
+    [initBtn setTitle:@"init Mopub" forState:UIControlStateNormal];
+    [initBtn addTarget:self action:@selector(initMopub) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *loadInterstitialBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    loadInterstitialBtn.frame = CGRectMake(x, y + 50, btnWidth, btnHeight);
+    [loadInterstitialBtn setTitle:@"Load Interstitial" forState:UIControlStateNormal];
+    [loadInterstitialBtn addTarget:self action:@selector(loadInterstitial) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *playIntersititalBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    playIntersititalBtn.frame = CGRectMake(x, y + 100, btnWidth, btnHeight);
+    [playIntersititalBtn setTitle:@"Play Interstitial" forState:UIControlStateNormal];
+    [playIntersititalBtn addTarget:self action:@selector(playInterstitial) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *loadRewardBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    loadRewardBtn.frame = CGRectMake(x, y + 150, btnWidth, btnHeight);
+    [loadRewardBtn setTitle:@"Load Reward" forState:UIControlStateNormal];
+    [loadRewardBtn addTarget:self action:@selector(loadReward) forControlEvents:UIControlEventTouchUpInside];
+
+    UIButton *playRewardBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    playRewardBtn.frame = CGRectMake(x, y + 200, btnWidth, btnHeight);
+    [playRewardBtn setTitle:@"Play Reward" forState:UIControlStateNormal];
+    [playRewardBtn addTarget:self action:@selector(playReward) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:initBtn];
+    [self.view addSubview:loadInterstitialBtn];
+    [self.view addSubview:playIntersititalBtn];
+    [self.view addSubview:loadRewardBtn];
+    [self.view addSubview:playRewardBtn];
+}
+
+# pragma mark - mopub init, load & play
+- (void)initMopub {
+    MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:rewardPlacement];
+    [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
+        NSLog(@"SDK initialization complete");
+    }];
+    
+    self.interstitial = [MPInterstitialAdController
+        interstitialAdControllerForAdUnitId:interstitialPlacement];
+    self.interstitial.delegate = self;
+    
+    [MPRewardedVideo setDelegate:self forAdUnitId:rewardPlacement];
+}
+
+- (void)loadInterstitial {
+    [self.interstitial loadAd];
+}
+
+- (void)playInterstitial {
+    if (self.interstitial.ready) [self.interstitial showFromViewController:self];
+}
+
+- (void)loadReward {
+    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:rewardPlacement withMediationSettings:nil];
+}
+
+- (void)playReward {
+    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:rewardPlacement fromViewController:self withReward:0];
+}
+
+#pragma mark - Interstitial Delegate
+- (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialDidLoadAd", interstitial.adUnitId);
+}
+
+- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial
+                          withError:(NSError *)error {
+    NSLog(@"AdUnit ID: %@ interstitialDidFailToLoadAd with Error %@", interstitial.adUnitId, error.localizedDescription);
+}
+
+- (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialWillAppear", interstitial.adUnitId);
+}
+
+- (void)interstitialDidAppear:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialDidAppear", interstitial.adUnitId);
+}
+
+- (void)interstitialWillDisappear:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialWillDisappear", interstitial.adUnitId);
+}
+
+- (void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialDidDisappear", interstitial.adUnitId);
+}
+
+- (void)interstitialDidExpire:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialDidExpire", interstitial.adUnitId);
+}
+
+- (void)interstitialDidReceiveTapEvent:(MPInterstitialAdController *)interstitial {
+    NSLog(@"AdUnit ID: %@ interstitialDidReceiveTapEvent", interstitial.adUnitId);
+}
+
+#pragma mark - reward delegate
+- (void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID {
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidLoadForAdUnitID", adUnitID);
+    BOOL playable = [MPRewardedVideo hasAdAvailableForAdUnitID:adUnitID];
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidLoadForAdUnitID %d", adUnitID, playable);
+}
+
+- (void)rewardedVideoAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidFailToLoadForAdUnitID with error %@", adUnitID, error.localizedDescription);
+}
+
+- (void)rewardedVideoAdDidFailToPlayForAdUnitID:(NSString *)adUnitID error:(NSError *)error{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidFailToPlayForAdUnitID with error %@", adUnitID, error.localizedDescription);
+}
+
+- (void)rewardedVideoAdWillAppearForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdWillAppearForAdUnitID", adUnitID);
+}
+
+- (void)rewardedVideoAdDidAppearForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidAppearForAdUnitID", adUnitId);
+}
+
+- (void)rewardedVideoAdWillDisappearForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdWillDisappearForAdUnitID", adUnitID);
+}
+
+- (void)rewardedVideoAdDidDisappearForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidDisappearForAdUnitID", adUnitID);
+}
+
+- (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdShouldRewardForAdUnitID", adUnitID);
+}
+- (void)rewardedVideoAdDidExpireForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidExpireForAdUnitID", adUnitID);
+}
+
+- (void)rewardedVideoAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdDidReceiveTapEventForAdUnitID", adUnitID);
+}
+
+- (void)rewardedVideoAdWillLeaveApplicationForAdUnitID:(NSString *)adUnitID{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAdWillLeaveApplicationForAdUnitID", adUnitID);
+}
+
+- (void)didTrackImpressionWithAdUnitID:(NSString *)adUnitID impressionData:(MPImpressionData *)impressionData;{
+    NSLog(@"AdUnit ID: %@ rewardedVideoAddidTrackImpressionWithAdUnitID", adUnitID);
+}
+
+@end
