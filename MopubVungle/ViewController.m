@@ -81,14 +81,30 @@
 # pragma mark - mopub init, load & play
 - (void)initMopub {
     MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:rewardPlacement];
+    /* Optional for Vungle early init
+     NSMutableDictionary *configDictionary = [NSMutableDictionary dictionaryWithDictionary:@{ @"appId" : @"Your_Vungle_App_Id" }];
+     [configDictionary setValue:@(50*1024) forKey:@"vngMinSpaceForInit"];
+     [configDictionary setValue:@(50*1024) forKey:@"vngMinSpaceForAdLoad"];
+     [sdkConfig setNetworkConfiguration:configDictionary forMediationAdapter:@"VungleAdapterConfiguration"];
+     */
     [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
         NSLog(@"SDK initialization complete");
     }];
     
     self.interstitial = [MPInterstitialAdController
         interstitialAdControllerForAdUnitId:interstitialPlacement];
+    /* Optional
+    NSNumber *orientations = [NSNumber numberWithInt:1];
+    NSString *ordinal = @"10";
+    NSNumber *muted = [NSNumber numberWithBool:YES];
+
+    NSDictionary *localExtras = @{@"ordinal" : ordinal ?: @"",
+                                  @"muted" : muted ?: @"",
+                                  @"orientations" : orientations ?: @""};
+
+    self.interstitial.localExtras = localExtras;
+     */
     self.interstitial.delegate = self;
-    
     [MPRewardedVideo setDelegate:self forAdUnitId:rewardPlacement];
 }
 
@@ -101,6 +117,14 @@
 }
 
 - (void)loadReward {
+    /* Optional
+     VungleInstanceMediationSettings *settings = [[VungleInstanceMediationSettings alloc] init];
+     settings.userIdentifier = @"VungleTestUser";
+     settings.startMuted = YES;
+     settings.orientations = @(1);
+     settings.ordinal = 5;
+      [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:rewardPlacement withMediationSettings:@[settings]];
+     */
     [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:rewardPlacement withMediationSettings:nil];
 }
 

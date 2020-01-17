@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BannerVC : UIViewController
+@property (nonatomic, strong) UIButton *loadBanner;
+@property (nonatomic, strong) UIButton *loadMrec;
+
 
 @end
 

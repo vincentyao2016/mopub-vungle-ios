@@ -37,19 +37,19 @@
     self.mrecView.frame = CGRectMake(x, 400, 300, 250);
     self.mrecView.backgroundColor = UIColor.orangeColor;
     
-    UIButton *loadBanner = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loadBanner.frame = CGRectMake(x, 120, 320, 80);
-    [loadBanner setTitle:@"Load & Play Banner" forState:UIControlStateNormal];
-    [loadBanner addTarget:self action:@selector(loadBanner) forControlEvents:UIControlEventTouchUpInside];
+    self.loadBanner = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.loadBanner.frame = CGRectMake(x, 120, 320, 80);
+    [self.loadBanner setTitle:@"Load & Play Banner" forState:UIControlStateNormal];
+    [self.loadBanner addTarget:self action:@selector(loadBanner) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *loadMrec = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loadMrec.frame = CGRectMake(x, 320, 320, 80);
-    [loadMrec setTitle:@"Load & Play MREC" forState:UIControlStateNormal];
-    [loadMrec addTarget:self action:@selector(loadMrec) forControlEvents:UIControlEventTouchUpInside];
+    self.loadMrec = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.loadMrec.frame = CGRectMake(x, 320, 320, 80);
+    [self.loadMrec setTitle:@"Load & Play MREC" forState:UIControlStateNormal];
+    [self.loadMrec addTarget:self action:@selector(loadMrec) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:loadBanner];
+    [self.view addSubview:self.loadBanner];
     [self.view addSubview:self.bannerView];
-    [self.view addSubview:loadMrec];
+    [self.view addSubview:self.loadMrec];
     [self.view addSubview:self.mrecView];
 }
 
@@ -57,10 +57,14 @@
 - (void)loadBanner {
     // automatically refreshes an ad unit at a time interval specified via the MoPub web interface
     [self.bannerView loadAdWithMaxAdSize:kMPPresetMaxAdSize50Height];
+    self.loadBanner.enabled = NO;
+    
 }
 
 - (void)loadMrec {
+    // automatically refreshes an ad unit at a time interval specified via the MoPub web interface
     [self.mrecView loadAdWithMaxAdSize:kMPPresetMaxAdSize250Height];
+    self.loadMrec.enabled = NO;
 }
 
 #pragma mark - MPAdView Delegate
@@ -73,14 +77,17 @@
 }
 
 - (void)willPresentModalViewForAd:(MPAdView *)view {
+    // Vungle do not have this callback yet
     NSLog(@"Adunit :%@ willPresentModalViewForAd", view.adUnitId);
 }
 
 - (void)didDismissModalViewForAd:(MPAdView *)view {
+    // Vungle do not have this callback yet
     NSLog(@"Adunit :%@ didDismissModalViewForAd", view.adUnitId);
 }
 
 - (void)willLeaveApplicationFromAd:(MPAdView *)view {
+    // Vungle do not have this callback yet
     NSLog(@"Adunit :%@ willLeaveApplicationFromAd", view.adUnitId);
 }
 
