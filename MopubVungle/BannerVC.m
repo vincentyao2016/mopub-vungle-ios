@@ -37,19 +37,19 @@
     self.mrecView.frame = CGRectMake(x, 400, 300, 250);
     self.mrecView.backgroundColor = UIColor.orangeColor;
     
-    self.loadBanner = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.loadBanner.frame = CGRectMake(x, 120, 320, 80);
-    [self.loadBanner setTitle:@"Load & Play Banner" forState:UIControlStateNormal];
-    [self.loadBanner addTarget:self action:@selector(loadBanner) forControlEvents:UIControlEventTouchUpInside];
+    self.loadBannerBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.loadBannerBtn.frame = CGRectMake(x, 120, 320, 80);
+    [self.loadBannerBtn setTitle:@"Load & Play Banner" forState:UIControlStateNormal];
+    [self.loadBannerBtn addTarget:self action:@selector(loadBanner) forControlEvents:UIControlEventTouchUpInside];
     
-    self.loadMrec = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.loadMrec.frame = CGRectMake(x, 320, 320, 80);
-    [self.loadMrec setTitle:@"Load & Play MREC" forState:UIControlStateNormal];
-    [self.loadMrec addTarget:self action:@selector(loadMrec) forControlEvents:UIControlEventTouchUpInside];
+    self.loadMrecBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.loadMrecBtn.frame = CGRectMake(x, 320, 320, 80);
+    [self.loadMrecBtn setTitle:@"Load & Play MREC" forState:UIControlStateNormal];
+    [self.loadMrecBtn addTarget:self action:@selector(loadMrec) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:self.loadBanner];
+    [self.view addSubview:self.loadBannerBtn];
     [self.view addSubview:self.bannerView];
-    [self.view addSubview:self.loadMrec];
+    [self.view addSubview:self.loadMrecBtn];
     [self.view addSubview:self.mrecView];
 }
 
@@ -57,14 +57,14 @@
 - (void)loadBanner {
     // automatically refreshes an ad unit at a time interval specified via the MoPub web interface
     [self.bannerView loadAdWithMaxAdSize:kMPPresetMaxAdSize50Height];
-    self.loadBanner.enabled = NO;
+//    self.loadBanner.enabled = NO;
     
 }
 
 - (void)loadMrec {
     // automatically refreshes an ad unit at a time interval specified via the MoPub web interface
     [self.mrecView loadAdWithMaxAdSize:kMPPresetMaxAdSize250Height];
-    self.loadMrec.enabled = NO;
+//    self.loadMrec.enabled = NO;
 }
 
 #pragma mark - MPAdView Delegate
