@@ -19,14 +19,14 @@
 		BF8E268C23CD8432005FF531 /* MopubVungleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E268B23CD8432005FF531 /* MopubVungleUITests.m */; };
 		BF8E26A123CD869E005FF531 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E269D23CD869E005FF531 /* Constant.m */; };
 		BF8E26BE23CDB708005FF531 /* BannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26BD23CDB708005FF531 /* BannerVC.m */; };
-		BF8E26CE23CDB9B3005FF531 /* VungleInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26C123CDB9B3005FF531 /* VungleInstanceMediationSettings.m */; };
-		BF8E26CF23CDB9B3005FF531 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = BF8E26C323CDB9B3005FF531 /* CHANGELOG.md */; };
-		BF8E26D023CDB9B3005FF531 /* VungleBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26C523CDB9B3005FF531 /* VungleBannerCustomEvent.m */; };
-		BF8E26D123CDB9B3005FF531 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF8E26C723CDB9B3005FF531 /* README.md */; };
-		BF8E26D223CDB9B3005FF531 /* VungleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26C823CDB9B3005FF531 /* VungleRouter.m */; };
-		BF8E26D323CDB9B3005FF531 /* VungleAdapterConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26C923CDB9B3005FF531 /* VungleAdapterConfiguration.m */; };
-		BF8E26D423CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26CB23CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.m */; };
-		BF8E26D523CDB9B3005FF531 /* VungleInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E26CD23CDB9B3005FF531 /* VungleInterstitialCustomEvent.m */; };
+		BF93423723D195E000ADB909 /* VungleInstanceMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93422A23D195E000ADB909 /* VungleInstanceMediationSettings.m */; };
+		BF93423823D195E000ADB909 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = BF93422C23D195E000ADB909 /* CHANGELOG.md */; };
+		BF93423923D195E000ADB909 /* VungleBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93422E23D195E000ADB909 /* VungleBannerCustomEvent.m */; };
+		BF93423A23D195E000ADB909 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF93423023D195E000ADB909 /* README.md */; };
+		BF93423B23D195E000ADB909 /* VungleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93423123D195E000ADB909 /* VungleRouter.m */; };
+		BF93423C23D195E000ADB909 /* VungleAdapterConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93423223D195E000ADB909 /* VungleAdapterConfiguration.m */; };
+		BF93423D23D195E000ADB909 /* VungleRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93423423D195E000ADB909 /* VungleRewardedVideoCustomEvent.m */; };
+		BF93423E23D195E000ADB909 /* VungleInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93423623D195E000ADB909 /* VungleInterstitialCustomEvent.m */; };
 		C38EFD2C22677811608A462D /* libPods-MopubVungle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E56B79FFC8A683309A9F2D9 /* libPods-MopubVungle.a */; };
 		CD883FABD10ECBE34965547B /* libPods-MopubVungleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4705105FD8E447D48A07DDC5 /* libPods-MopubVungleUITests.a */; };
 /* End PBXBuildFile section */
@@ -78,20 +78,20 @@
 		BF8E269D23CD869E005FF531 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		BF8E26BC23CDB707005FF531 /* BannerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerVC.h; sourceTree = "<group>"; };
 		BF8E26BD23CDB708005FF531 /* BannerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerVC.m; sourceTree = "<group>"; };
-		BF8E26C023CDB9B3005FF531 /* VungleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleRouter.h; sourceTree = "<group>"; };
-		BF8E26C123CDB9B3005FF531 /* VungleInstanceMediationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleInstanceMediationSettings.m; sourceTree = "<group>"; };
-		BF8E26C223CDB9B3005FF531 /* VungleAdapterConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdapterConfiguration.h; sourceTree = "<group>"; };
-		BF8E26C323CDB9B3005FF531 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		BF8E26C423CDB9B3005FF531 /* VungleInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		BF8E26C523CDB9B3005FF531 /* VungleBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleBannerCustomEvent.m; sourceTree = "<group>"; };
-		BF8E26C623CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		BF8E26C723CDB9B3005FF531 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BF8E26C823CDB9B3005FF531 /* VungleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleRouter.m; sourceTree = "<group>"; };
-		BF8E26C923CDB9B3005FF531 /* VungleAdapterConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleAdapterConfiguration.m; sourceTree = "<group>"; };
-		BF8E26CA23CDB9B3005FF531 /* VungleInstanceMediationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleInstanceMediationSettings.h; sourceTree = "<group>"; };
-		BF8E26CB23CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
-		BF8E26CC23CDB9B3005FF531 /* VungleBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleBannerCustomEvent.h; sourceTree = "<group>"; };
-		BF8E26CD23CDB9B3005FF531 /* VungleInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleInterstitialCustomEvent.m; sourceTree = "<group>"; };
+		BF93422923D195E000ADB909 /* VungleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleRouter.h; sourceTree = "<group>"; };
+		BF93422A23D195E000ADB909 /* VungleInstanceMediationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleInstanceMediationSettings.m; sourceTree = "<group>"; };
+		BF93422B23D195E000ADB909 /* VungleAdapterConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdapterConfiguration.h; sourceTree = "<group>"; };
+		BF93422C23D195E000ADB909 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		BF93422D23D195E000ADB909 /* VungleInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		BF93422E23D195E000ADB909 /* VungleBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleBannerCustomEvent.m; sourceTree = "<group>"; };
+		BF93422F23D195E000ADB909 /* VungleRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		BF93423023D195E000ADB909 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF93423123D195E000ADB909 /* VungleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleRouter.m; sourceTree = "<group>"; };
+		BF93423223D195E000ADB909 /* VungleAdapterConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleAdapterConfiguration.m; sourceTree = "<group>"; };
+		BF93423323D195E000ADB909 /* VungleInstanceMediationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleInstanceMediationSettings.h; sourceTree = "<group>"; };
+		BF93423423D195E000ADB909 /* VungleRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		BF93423523D195E000ADB909 /* VungleBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleBannerCustomEvent.h; sourceTree = "<group>"; };
+		BF93423623D195E000ADB909 /* VungleInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleInterstitialCustomEvent.m; sourceTree = "<group>"; };
 		CFFF16896D49F601ECC5FDCA /* Pods-MopubVungle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungle/Pods-MopubVungle.debug.xcconfig"; sourceTree = "<group>"; };
 		E2F95A39342976B06B966797 /* Pods-MopubVungleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleUITests/Pods-MopubVungleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +172,7 @@
 		BF8E266323CD8430005FF531 /* MopubVungle */ = {
 			isa = PBXGroup;
 			children = (
-				BF8E26BF23CDB9B3005FF531 /* Vungle */,
+				BF93422823D195E000ADB909 /* Vungle */,
 				BF8E26BC23CDB707005FF531 /* BannerVC.h */,
 				BF8E26BD23CDB708005FF531 /* BannerVC.m */,
 				BF8E269B23CD869D005FF531 /* Constant.h */,
@@ -210,23 +210,23 @@
 			path = MopubVungleUITests;
 			sourceTree = "<group>";
 		};
-		BF8E26BF23CDB9B3005FF531 /* Vungle */ = {
+		BF93422823D195E000ADB909 /* Vungle */ = {
 			isa = PBXGroup;
 			children = (
-				BF8E26C023CDB9B3005FF531 /* VungleRouter.h */,
-				BF8E26C123CDB9B3005FF531 /* VungleInstanceMediationSettings.m */,
-				BF8E26C223CDB9B3005FF531 /* VungleAdapterConfiguration.h */,
-				BF8E26C323CDB9B3005FF531 /* CHANGELOG.md */,
-				BF8E26C423CDB9B3005FF531 /* VungleInterstitialCustomEvent.h */,
-				BF8E26C523CDB9B3005FF531 /* VungleBannerCustomEvent.m */,
-				BF8E26C623CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.h */,
-				BF8E26C723CDB9B3005FF531 /* README.md */,
-				BF8E26C823CDB9B3005FF531 /* VungleRouter.m */,
-				BF8E26C923CDB9B3005FF531 /* VungleAdapterConfiguration.m */,
-				BF8E26CA23CDB9B3005FF531 /* VungleInstanceMediationSettings.h */,
-				BF8E26CB23CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.m */,
-				BF8E26CC23CDB9B3005FF531 /* VungleBannerCustomEvent.h */,
-				BF8E26CD23CDB9B3005FF531 /* VungleInterstitialCustomEvent.m */,
+				BF93422923D195E000ADB909 /* VungleRouter.h */,
+				BF93422A23D195E000ADB909 /* VungleInstanceMediationSettings.m */,
+				BF93422B23D195E000ADB909 /* VungleAdapterConfiguration.h */,
+				BF93422C23D195E000ADB909 /* CHANGELOG.md */,
+				BF93422D23D195E000ADB909 /* VungleInterstitialCustomEvent.h */,
+				BF93422E23D195E000ADB909 /* VungleBannerCustomEvent.m */,
+				BF93422F23D195E000ADB909 /* VungleRewardedVideoCustomEvent.h */,
+				BF93423023D195E000ADB909 /* README.md */,
+				BF93423123D195E000ADB909 /* VungleRouter.m */,
+				BF93423223D195E000ADB909 /* VungleAdapterConfiguration.m */,
+				BF93423323D195E000ADB909 /* VungleInstanceMediationSettings.h */,
+				BF93423423D195E000ADB909 /* VungleRewardedVideoCustomEvent.m */,
+				BF93423523D195E000ADB909 /* VungleBannerCustomEvent.h */,
+				BF93423623D195E000ADB909 /* VungleInterstitialCustomEvent.m */,
 			);
 			path = Vungle;
 			sourceTree = "<group>";
@@ -340,9 +340,9 @@
 			files = (
 				BF8E267423CD8432005FF531 /* LaunchScreen.storyboard in Resources */,
 				BF8E267123CD8432005FF531 /* Assets.xcassets in Resources */,
-				BF8E26D123CDB9B3005FF531 /* README.md in Resources */,
+				BF93423A23D195E000ADB909 /* README.md in Resources */,
 				BF8E266F23CD8430005FF531 /* Main.storyboard in Resources */,
-				BF8E26CF23CDB9B3005FF531 /* CHANGELOG.md in Resources */,
+				BF93423823D195E000ADB909 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,18 +480,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8E26D023CDB9B3005FF531 /* VungleBannerCustomEvent.m in Sources */,
+				BF93423923D195E000ADB909 /* VungleBannerCustomEvent.m in Sources */,
 				BF8E26BE23CDB708005FF531 /* BannerVC.m in Sources */,
 				BF8E266C23CD8430005FF531 /* ViewController.m in Sources */,
 				BF8E26A123CD869E005FF531 /* Constant.m in Sources */,
-				BF8E26CE23CDB9B3005FF531 /* VungleInstanceMediationSettings.m in Sources */,
-				BF8E26D423CDB9B3005FF531 /* VungleRewardedVideoCustomEvent.m in Sources */,
+				BF93423723D195E000ADB909 /* VungleInstanceMediationSettings.m in Sources */,
+				BF93423D23D195E000ADB909 /* VungleRewardedVideoCustomEvent.m in Sources */,
 				BF8E266623CD8430005FF531 /* AppDelegate.m in Sources */,
 				BF8E267723CD8432005FF531 /* main.m in Sources */,
-				BF8E26D523CDB9B3005FF531 /* VungleInterstitialCustomEvent.m in Sources */,
-				BF8E26D223CDB9B3005FF531 /* VungleRouter.m in Sources */,
+				BF93423E23D195E000ADB909 /* VungleInterstitialCustomEvent.m in Sources */,
+				BF93423B23D195E000ADB909 /* VungleRouter.m in Sources */,
 				BF8E266923CD8430005FF531 /* SceneDelegate.m in Sources */,
-				BF8E26D323CDB9B3005FF531 /* VungleAdapterConfiguration.m in Sources */,
+				BF93423C23D195E000ADB909 /* VungleAdapterConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

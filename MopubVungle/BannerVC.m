@@ -117,14 +117,17 @@
 }
 
 - (void)willPresentModalViewForAd:(MPAdView *)view {
+    // Vungle do not have this callback yet
     NSLog(@"Adunit :%@ willPresentModalViewForAd", view.adUnitId);
 }
 
 - (void)didDismissModalViewForAd:(MPAdView *)view {
+    // Vungle do not have this callback yet
     NSLog(@"Adunit :%@ didDismissModalViewForAd", view.adUnitId);
 }
 
 - (void)willLeaveApplicationFromAd:(MPAdView *)view {
+    // Vungle do not have this callback yet
     NSLog(@"Adunit :%@ willLeaveApplicationFromAd", view.adUnitId);
 }
 
