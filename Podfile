@@ -8,9 +8,9 @@ target 'MopubVungle' do
   # use_frameworks!
 
   # Pods for MopubVungle
-  pod 'mopub-ios-sdk', '5.16.2'
+  pod 'mopub-ios-sdk', '5.17.0'
 #  pod "VungleSDK-iOS", '6.9.2'
-  pod 'MoPub-Vungle-Adapters', '6.9.2.0'
+#  pod 'MoPub-Vungle-Adapters', '6.9.2.1'
 
   target 'MopubVungleTests' do
     inherit! :search_paths

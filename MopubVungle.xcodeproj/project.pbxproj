@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8AEE02DB5CD2766E4E152076 /* libPods-MopubVungleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D6C983CB94F8F20DDE1CE0 /* libPods-MopubVungleTests.a */; };
+		BF4378952671F4B90075E960 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4378942671F4B90075E960 /* File.swift */; };
 		BF8E266623CD8430005FF531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E266523CD8430005FF531 /* AppDelegate.m */; };
 		BF8E266923CD8430005FF531 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E266823CD8430005FF531 /* SceneDelegate.m */; };
 		BF8E266C23CD8430005FF531 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8E266B23CD8430005FF531 /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		4705105FD8E447D48A07DDC5 /* libPods-MopubVungleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MopubVungleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805B35370C1C451EF753A74C /* Pods-MopubVungleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleTests/Pods-MopubVungleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0AAB9DFC0CA9BEB1509856A /* Pods-MopubVungleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MopubVungleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MopubVungleUITests/Pods-MopubVungleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4378942671F4B90075E960 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BF4378962671F4E00075E960 /* MopubVungle-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MopubVungle-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF8E266123CD8430005FF531 /* MopubVungle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MopubVungle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8E266423CD8430005FF531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF8E266523CD8430005FF531 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				BF8E267223CD8432005FF531 /* LaunchScreen.storyboard */,
 				BF8E267523CD8432005FF531 /* Info.plist */,
 				BF8E267623CD8432005FF531 /* main.m */,
+				BF4378942671F4B90075E960 /* File.swift */,
+				BF4378962671F4E00075E960 /* MopubVungle-Bridging-Header.h */,
 			);
 			path = MopubVungle;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				BF8E265E23CD8430005FF531 /* Frameworks */,
 				BF8E265F23CD8430005FF531 /* Resources */,
 				A21039816DA636C24367FFC7 /* [CP] Copy Pods Resources */,
+				358E69FA1714872AEF0F82DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +264,7 @@
 				TargetAttributes = {
 					BF8E266023CD8430005FF531 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1250;
 					};
 					BF8E267B23CD8432005FF531 = {
 						CreatedOnToolsVersion = 11.3;
@@ -317,6 +324,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		358E69FA1714872AEF0F82DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MopubVungle/Pods-MopubVungle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MopubVungle/Pods-MopubVungle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MopubVungle/Pods-MopubVungle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		395BBE6305348C3F76790918 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +421,7 @@
 			files = (
 				BF8E26BE23CDB708005FF531 /* BannerVC.m in Sources */,
 				BF8E266C23CD8430005FF531 /* ViewController.m in Sources */,
+				BF4378952671F4B90075E960 /* File.swift in Sources */,
 				BF8E26A123CD869E005FF531 /* Constant.m in Sources */,
 				BF8E266623CD8430005FF531 /* AppDelegate.m in Sources */,
 				BF8E267723CD8432005FF531 /* main.m in Sources */,
@@ -570,7 +595,13 @@
 			baseConfigurationReference = CFFF16896D49F601ECC5FDCA /* Pods-MopubVungle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MopubVungle",
+				);
 				INFOPLIST_FILE = MopubVungle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +609,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MopubVungle/MopubVungle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -587,7 +621,13 @@
 			baseConfigurationReference = 2E06075AC8659E92D845C0BB /* Pods-MopubVungle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MopubVungle",
+				);
 				INFOPLIST_FILE = MopubVungle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,6 +635,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.MopubVungle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MopubVungle/MopubVungle-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -603,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 805B35370C1C451EF753A74C /* Pods-MopubVungleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MopubVungleTests/Info.plist;
@@ -623,6 +666,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 016E657BA84C53115B000C44 /* Pods-MopubVungleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MopubVungleTests/Info.plist;
@@ -643,6 +687,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0AAB9DFC0CA9BEB1509856A /* Pods-MopubVungleUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MopubVungleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -661,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2F95A39342976B06B966797 /* Pods-MopubVungleUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MopubVungleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
